@@ -11,6 +11,8 @@ namespace ExpressionParser
     {
         static void Main(string[] args)
         {
+            //REF: https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-adaptive-expressions?view=azure-bot-service-4.0&tabs=arithmetic
+            //REF: https://docs.microsoft.com/en-us/azure/bot-service/adaptive-expressions/adaptive-expressions-prebuilt-functions?view=azure-bot-service-4.0
             var c = Expression.Parse("a == \"3.1415926\" && true");
             var result = c.TryEvaluate(new
             {
